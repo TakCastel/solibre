@@ -5862,9 +5862,42 @@ a.text-dark:focus, a.text-dark:hover {
 /* ===============
  CSS CUSTOM STYLES 
 =============== */
+body {
+  font-family: 'Raleway', sans-serif; }
+
+html {
+  background: #343a40; }
+
+.background {
+  background: #fff; }
+
+h1, h2 {
+  font-family: 'Ubuntu', sans-serif; }
+
+h2 {
+  font-size: 1.2rem; }
+
+@media (min-width: 992px) {
+  nav.navbar {
+    padding: 15px 30px; }
+  .navbar-nav > li {
+    margin-left: 15px;
+    margin-right: 15px; } }
+
+.m-header {
+  margin-top: 5rem !important;
+  margin-bottom: 10rem !important; }
+
+.m-content {
+  margin-bottom: 5rem !important; }
+
 .social img {
   width: 30px;
   height: 30px; }
 
 .social a:hover {
   text-decoration: none; }
+
+.event {
+  display: flex;
+  flex-direction: column; }
