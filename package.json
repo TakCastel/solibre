@@ -1,0 +1,28 @@
+{
+  "name": "solibre",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "refresh": "reload -b",
+    "scss": "node-sass custom.scss style.css -w",
+    "start": "npm run scss | npm run refresh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TakCastel/solibre.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TakCastel/solibre/issues"
+  },
+  "homepage": "https://github.com/TakCastel/solibre#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2"
+  },
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "reload": "^2.2.2"
+  }
+}
