@@ -39,9 +39,52 @@
 /* ===============
  CSS CUSTOM STYLES 
 =============== */
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+// Prevent 'flying' footer when poor content is provided
+html {
+    background: $dark;
+}
+// Set background color white between navbar and footer
+.background {
+    background: $white;
+}
+
+// Custom elements
+h1, h2 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+// Navbar custom style
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 992px) { 
+    nav.navbar {
+        padding: 15px 30px;
+    }
+    
+    .navbar-nav > li {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+ }
+
+// Custom margins from header to content
+.m-header {
+    margin-top: ($spacer * 5) !important;
+    margin-bottom: ($spacer * 10) !important;
+}
+.m-content {
+    margin-bottom: ($spacer * 5) !important;
+}
 
 // Social links
-
 .social {
     img {
         width: 30px;
@@ -50,4 +93,9 @@
     a:hover {
         text-decoration: none;
     }
+}
+
+.event {
+    display: flex;
+    flex-direction: column;
 }
