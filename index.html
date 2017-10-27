@@ -7,11 +7,130 @@
   </head>
 
   <body>
+
+    <!-- Navigation with brand and links to pages -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="images/brand.svg" width="30" height="30" class="d-inline-block align-top" alt="brand">
+          Solibre
+        </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Membres</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Association</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header with logo and title -->
     <heading>
-      <h1>Open Source Innovation</h1>
-      <p>Les acteurs du Logiciel Libre</p>
+      <div class="container mt-5 mb-5">
+        <div class="row">
+          <div class="col-sm">
+            <img src="images/logo.svg" alt="logo" width="100%"/>
+          </div>
+          <div class="col-sm text-right">
+            <h1>Open Source Innovation</h1>
+            <p>Les acteurs du Logiciel Libre</p>  
+          </div>
+        </div>
+      </div>
     </heading>
 
+    <!-- Breadcrumb and social links -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6">
+          <nav aria-label="breadcrumb" role="navigation">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item active" aria-current="page">Accueil</li>
+            </ol>
+          </nav>
+        </div>
+        <div class="col-xs-6 col-lg text-right social">
+          <a href="#">
+            <img id="social-twitter" src="images/Entypo+/social/twitter-with-circle.svg" alt="twitter">
+          </a>
+          <a href="#">
+            <img id="social-facebook" src="images/Entypo+/social/facebook-with-circle.svg" alt="facebook">
+          </a>
+          <a href="#">
+            <img id="social-linkedin" src="images/Entypo+/social/linkedin-with-circle.svg" alt="linkedin">
+          </a>
+          <a href="#">
+            <img id="social-google" src="images/Entypo+/social/google+-with-circle.svg" alt="google plus">
+          </a>
+          <a href="#">
+            <img id="social-pinterest" src="images/Entypo+/social/pinterest-with-circle.svg" alt="pinterest">
+          </a>  
+          <a href="#">
+            <img id="social-mail" src="images/Entypo+/social/mail-with-circle.svg" alt="mail">
+          </a>   
+        </div>
+      </div>
+    </div>
+
+    <!-- Display next 3 events -->
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-lg">
+          <h2>RRLL Toulouse 2017</h2>
+          <p>Rendez-vous le 21 Novembre à l'hippodrome de Toulouse !</p>
+          <img src="images/event.png" class="img-fluid rounded mx-auto d-block mb-3" alt="event">
+          <button type="button" class="btn btn-outline-primary">En savoir plus</button>
+        </div>
+        <div class="col-lg">
+          <h2>RRLL Montpellier 2017</h2>
+          <p>Rendez-vous le 23 Novembre à l'Open Source School de Montpellier !</p>
+          <img src="images/event.png" class="img-fluid rounded mx-auto d-block mb-3" alt="event">
+          <button type="button" class="btn btn-outline-primary">En savoir plus</button> 
+        </div>
+        <div class="col-lg">
+          <h2>Les membres de SoLibre au Paris Open Source Summit 2017</h2>
+          <p>Retrouvez les membres de SoLibre au POSS 2017, les 6 & 7 décembre au Dock Pullman de Paris.</p>
+          <button type="button" class="btn btn-outline-primary">En savoir plus</button>        
+        </div>
+      </div>
+    </div>
+
+    <!-- Agenda access bar -->
+
+    <div class="container mt-3 mb-5">
+      <div class="text-center">
+          <a href="#">Voir tous les évènements</a>        
+      </div>
+    </div>
+
+    <footer class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm mt-3 mb-3">
+            <button type="button" class="btn btn-secondary">Flux RSS</button> 
+          </div>
+          <div class="col-sm mt-3 mb-3 text-light text-right">
+            <small>Copyright © 2017 - Tous droits réservés</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
   </body>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 </html>
