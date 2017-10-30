@@ -94,7 +94,7 @@ h2 {
         content: '';
         display: block;
         position: absolute;
-        background: $green;
+        background: $light-green;
         top: 0;
         width: 130px;
         margin-left: -24px;
@@ -104,7 +104,7 @@ h2 {
         content: '';
         display: block;
         position: absolute;
-        background: $light-green;
+        background: $green;
         top: 0;
         width: 130px;
         margin-left: -24px;
@@ -113,6 +113,28 @@ h2 {
     a.navbar-brand {
         padding: 30px;
     }
+}
+
+// Access to calendar
+.img-60 {
+    width: 60px;
+}
+
+// Members list display
+.member-list {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.member-list:after {
+    content: "";
+    flex: auto;
+  }
+.member {
+    min-width: 180px;
+    margin: 30px 15px;
+    text-align: center;
 }
 
 // Social links
@@ -132,27 +154,6 @@ h2 {
 }
 
 // Buttons
-.btn {
-    border-radius: 0;
-}
-.btn:hover {
-    box-shadow: 0 6px 24px -6px rgba(0, 0, 0, 0.25);
-}
-.btn-secondary {
-    background-color: #e66225;
-    color: $black;
-    font-size: 0.9em;
-}
-.btn-secondary:hover {
-    color: $black;
-    background-color: #b34d1e;
-}
-.btn:not([disabled]):not(.disabled):active, .btn:focus {
-    box-shadow: none
-}
-.btn-secondary:not([disabled]):not(.disabled):active, .btn-secondary:focus {
-    color: $black;
-}
 .btn-image {
     width: 1.4em;
 }
