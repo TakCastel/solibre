@@ -1,4 +1,4 @@
-// Bootstrap and the custom variables in root directory
+/* Bootstrap and the custom variables in root directory */
 
 @import "node_modules/bootstrap/scss/functions";
 @import "variables";
@@ -43,14 +43,14 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-// Prevent 'flying' footer when poor content is provided
+/* Prevent 'flying' footer when poor content is provided */
 html {
     background: $dark;
 }
 footer {
     background: #2c2925;
 }
-// Set background color white between navbar and footer
+/* Set background color white between navbar and footer */
 .background {
     background: $white;
 }
@@ -60,10 +60,10 @@ footer {
 }
     
 header {
-    background: linear-gradient($light-green, #b3d03d);
+    background: linear-gradient($light-green, #b5ce4f);
 }
 
-// Custom elements
+/* Custom elements */
 h1, h2, h3, h4 {
     font-family: 'Ubuntu', sans-serif;
 }
@@ -77,14 +77,14 @@ h4 {
     }
 }
 
-// Mobile devices (tablets, 575px and up)
+/* Mobile devices (tablets, 575px and up) */
 @media (max-width: 575px) {
     .logo {
         display: none;
     }
 }
 
-// Medium devices (tablets, 992px and up)
+/* Medium devices (tablets, 992px and up) */
 @media (min-width: 992px) {
     nav.navbar {
         padding: 0;
@@ -126,12 +126,11 @@ h4 {
     }
 }
 
-// Navbar shadow
 .navbar {
-    box-shadow: 0 0 4px rgba(0,0,0, 0.1)
+    box-shadow: 0 0 4px rgba(0,0,0, 0.25)
 }
 
-// Members list display
+/* Members list display */
 .member-list {
     display:flex;
     flex-wrap: wrap;
@@ -144,23 +143,19 @@ h4 {
     text-align: center;
 }
 
-// Social links
+/* Social links */
 .social {
-    svg {
-        fill: $white;
-        transition: all 0.2s;        
+    img {
+        width: 60px;
+        height: 40px; 
+        filter: grayscale(1); 
+        transition: filter 0.2s;
+    }
+    img:hover {
+        filter: grayscale(0);
     }
     a:hover {
         text-decoration: none;
-        #twitter {
-            fill: #1da1f2;
-        }
-        #linkedin {
-            fill: #0077b5;
-        }
-        #facebook {
-            fill: #4367b2;
-        }
     }
 }
 
@@ -168,19 +163,18 @@ h4 {
     display: flex;
     flex-direction: column;
 }
-// Card
+
+/* Card */
 .card {
     box-shadow: 0 6px 24px 1px rgba(0, 0, 0, 0.1);
 }
 .card:hover {
+    background: #d0e86c;
     box-shadow: 0 6px 24px 1px rgba(0, 0, 0, 0.25);
     transition: all 0.2s;
     img.card-img-top {
         transition: all 0.2s;
         filter: grayscale(0);
-    }
-    .card-footer {
-        background: $light-green;
     }
 }
 
