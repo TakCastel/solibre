@@ -47,9 +47,6 @@ body {
 html {
     background: $dark;
 }
-footer {
-    background: #2c2925;
-}
 // Set background color white between navbar and footer
 .background {
     background: $white;
@@ -57,14 +54,24 @@ footer {
 
 .header {
     position: relative;
+    background: $light-green;
     &::before {
         content: '';
         position: absolute;
         top: 0; bottom: 0; left: 0; right: 0;
-        opacity: .3;
+        opacity: .1;
         background: url('./images/toulouse.jpg') center center;
         background-size: 100% auto;
     }
+}
+
+.solibre-logo {
+    background: white;
+    width: 8em;
+    height: 8em;
+    margin-bottom: 1.5em;
+    padding: 1em;
+    border-radius: 10em;
 }
 
 // Custom elements
@@ -105,17 +112,7 @@ h4 {
         padding: 30px;
         transition: all 2s;
     }
-    a.nav-link:hover::before {
-        content: '';
-        display: block;
-        position: absolute;
-        background: $light-green;
-        top: 0;
-        width: 130px;
-        margin-left: -24px;
-        height: 9px;
-    }
-    .navbar-light .navbar-nav .active > .nav-link::before {
+    .navbar .navbar-nav .active > .nav-link::before, a.nav-link:hover::before {
         content: '';
         display: block;
         position: absolute;
@@ -123,10 +120,13 @@ h4 {
         top: 0;
         width: 130px;
         margin-left: -24px;
-        height: 9px;
+        height: 6px;
     }
     a.navbar-brand {
         padding: 30px;
+    }
+    a.nav-link:hover::before {
+        background: $light-green;
     }
 }
 
@@ -173,21 +173,32 @@ h4 {
     flex-direction: column;
 }
 // Card
+.card-title {
+    font-size: 1.25em;
+
+    &::after {
+        content: '';
+        display: block;
+        margin-top: 1em;
+        width: 1.5em;
+        height: 3px;
+        background: $green;
+    }
+}
 .card {
-    box-shadow: 0 6px 24px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 4px rgba(0,0,0, 0.1)
+}
+.card-footer {
+    background: $white;
 }
 .card:hover {
-    box-shadow: 0 6px 24px 1px rgba(0, 0, 0, 0.25);
     transition: all 0.2s;
     img.card-img-top {
         transition: all 0.2s;
         filter: grayscale(0);
     }
-    .card-footer {
-        background: $light-green;
-    }
 }
 
 img.card-img-top {
-    filter: grayscale(1);
+    // filter: grayscale(1);
 }
