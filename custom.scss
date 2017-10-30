@@ -62,7 +62,8 @@ footer {
         position: absolute;
         top: 0; bottom: 0; left: 0; right: 0;
         opacity: .3;
-        background: url('./images/toulouse.jpg');
+        background: url('./images/toulouse.jpg') center center;
+        background-size: 100% auto;
     }
 }
 

@@ -5884,7 +5884,8 @@ footer {
     left: 0;
     right: 0;
     opacity: .3;
-    background: url("./images/toulouse.jpg"); }
+    background: url("./images/toulouse.jpg") center center;
+    background-size: 100% auto; }
 
 h1, h2, h3, h4 {
   font-family: 'Ubuntu', sans-serif; }
