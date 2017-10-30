@@ -55,60 +55,71 @@
       </header>
 
       <!-- Website content inside a div for custom margins-->
-      <div class="pt-5 pb-5">
+      <div class="pb-5">
 
-        <!-- Breadcrumb and social links -->
-        <div class="container">
-          <div class="row">
-            <div class="col-sm">
-              <nav aria-label="breadcrumb" role="navigation">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item active" aria-current="page">Accueil</li>
-                </ol>
-              </nav>
-            </div>
-          </div>
-        </div>
+        <!-- Background secondary div start -->
+        <div class="bg-dark pt-5 pb-5">
 
-        <!-- Display next 3 events -->
-        <div class="container">
-          <div class="row">
-            <div class="col-lg">
-              <div class="event mb-5">
-                <h2><a href="#">RRLL Toulouse 2017</a></h2>
-                <p>Rendez-vous le 21 Novembre à l'hippodrome de Toulouse !</p>
-                <img src="images/event.png" class="img-fluid rounded mx-auto d-block mb-3" alt="event">
-                <a href="#">En savoir plus »</a>
+          <!-- Breadcrumb and social links -->
+          <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                  <nav aria-label="breadcrumb" role="navigation">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item active" aria-current="page">Accueil</li>
+                    </ol>
+                  </nav>
+                </div>
               </div>
             </div>
-            <div class="col-lg">
-              <div class="event mb-5">
-                <h2><a href="#">RRLL Montpellier 2017</a></h2>
-                <p>Rendez-vous le 23 Novembre à l'Open Source School de Montpellier !</p>
-                <img src="images/event.png" class="img-fluid rounded mx-auto d-block mb-3" alt="event">
-                <a href="#">En savoir plus »</a> 
+
+          <!-- Display next 3 events -->
+          <div class="container">
+            <div class="card-deck">
+              <div class="card">
+                <img class="card-img-top" src="images/event.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title"><a href="#">RRLL Toulouse 2017</a></h4>
+                  <p class="card-text">Rendez-vous le 21 Novembre à l'hippodrome de Toulouse !</p>
+                </div>
+                <div class="card-footer">
+                  <a href="#">En savoir plus »</a>  
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="images/event.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title"><a href="#">RRLL Montpellier 2017</a></h4>
+                  <p class="card-text">Rendez-vous le 23 Novembre à l'Open Source School de Montpellier !</p>
+                </div>
+                <div class="card-footer">
+                  <a href="#">En savoir plus »</a>  
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="images/event.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title"><a href="#">Les membres de SoLibre au Paris Open Source Summit 2017</a></h4>
+                  <p class="card-text">Retrouvez les membres de SoLibre au POSS 2017, les 6 & 7 décembre au Dock Pullman de Paris.</p>
+                </div>
+                <div class="card-footer">
+                  <a href="#">En savoir plus »</a>  
+                </div>
               </div>
             </div>
-            <div class="col-lg">
-              <div class="event mb-5">
-                <h2><a href="#">Les membres de SoLibre au Paris Open Source Summit 2017</a></h2>
-                <p>Retrouvez les membres de SoLibre au POSS 2017, les 6 & 7 décembre au Dock Pullman de Paris.</p>
-                <a href="#">En savoir plus »</a>  
-              </div>      
-            </div>
           </div>
-        </div>
+          
 
-        <!-- Agenda access bar -->
-        <div class="container mt-5 mb-5">
-          <div class="row">
-            <div class="col-lg">
-              <button class="btn btn-primary">
-                <img class="btn-image" src="images/entypo/icons/calendar.svg" alt="calendar">
-                Voir tous les évènements
-              </button>                   
+          <!-- Agenda access bar -->
+          <div class="container mt-5 mb-5">
+            <div class="row">
+              <div class="col-lg">
+                <a href="#">Voir tous les évènements</span>               
+              </div>
             </div>
           </div>
+
+        <!-- Background secondary div ends -->
         </div>
 
         <!-- Members list -->
@@ -186,18 +197,18 @@
       </div> 
 
       <!-- Footer with rss and copyright -->
-      <footer class="bg-dark">
-        <div class="container pt-5 pb-5">
-          <div class="row">
-            <div class="col-sm">
+      <footer>
+        <div class="container">
+          <div class="row pt-5 pb-5">
+            <div class="col-md text-center mb-5">
               <button type="button" class="btn btn-outline-secondary" title="flux rss">S'abonner au flux RSS</button> 
             </div>
-            <div class="col-sm text-sm-center social">
+            <div class="col-md text-center mb-5 social">
               <a href="#"><img id="social-twitter" src="images/entypo/social/twitter-with-circle.svg" alt="twitter"></a>
               <a href="#"><img id="social-facebook" src="images/entypo/social/facebook-with-circle.svg" alt="facebook"></a>
               <a href="#"><img id="social-linkedin" src="images/entypo/social/linkedin-with-circle.svg" alt="linkedin"></a> 
             </div>
-            <div class="col-sm text-light text-sm-right">
+            <div class="col-md text-light text-center text-md-right mb-5">
               <small>© 2017 · Tous droits réservés</small>
             </div>
           </div>

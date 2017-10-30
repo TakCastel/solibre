@@ -47,27 +47,27 @@ body {
 html {
     background: $dark;
 }
+footer {
+    background: #2c2925;
+}
 // Set background color white between navbar and footer
 .background {
     background: $white;
 }
-
 header {
-    background: #d0e86c;
+    background: $light-green;
 }
 
 // Custom elements
-h1, h2 {
+h1, h2, h3, h4 {
     font-family: 'Ubuntu', sans-serif;
 }
 
-h2 {
-    font-size: 1.2rem;
+h4 {
     a {
         color: $black;
     }
     a:hover {
-        color: $black;
         text-decoration: none;
     }
 }
@@ -115,11 +115,6 @@ h2 {
     }
 }
 
-// Access to calendar
-.img-60 {
-    width: 60px;
-}
-
 // Members list display
 .member-list {
     display:flex;
@@ -127,21 +122,17 @@ h2 {
     align-items: center;
     justify-content: space-around;
 }
-.member-list:after {
-    content: "";
-    flex: auto;
-  }
 .member {
     min-width: 180px;
-    margin: 30px 15px;
+    margin: 30px 0;
     text-align: center;
 }
 
 // Social links
 .social {
     img {
-        width: 30px;
-        height: 30px;    
+        width: 60px;
+        height: 40px;  
     }
     a:hover {
         text-decoration: none;
@@ -152,8 +143,8 @@ h2 {
     display: flex;
     flex-direction: column;
 }
-
-// Buttons
-.btn-image {
-    width: 1.4em;
+// Card
+.card:hover {
+    background: #d0e86c;
+    transition: all 0.2s;
 }

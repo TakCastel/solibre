@@ -17,8 +17,8 @@ $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
 $gray-600: #868e96 !default;
 $gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
+$gray-800: #544f47 !default;
+$gray-900: #495057 !default;
 $black:    #000 !default;
 
 $grays: () !default;
@@ -41,7 +41,7 @@ $pink:    #e83e8c !default;
 $red:     #dc3545 !default;
 $orange:  #e66225 !default;
 $yellow:  #ffc107 !default;
-$light-green:   #aeca3a !default;
+$light-green:   #d0e86c !default;
 $green:   #5e9942 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
@@ -603,8 +603,8 @@ $jumbotron-bg:                      $gray-200 !default;
 
 $card-spacer-y:                     .75rem !default;
 $card-spacer-x:                     1.25rem !default;
-$card-border-width:                 $border-width !default;
-$card-border-radius:                $border-radius !default;
+$card-border-width:                 0 !default;
+$card-border-radius:                0 !default;
 $card-border-color:                 rgba($black,.125) !default;
 $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width}) !default;
 $card-cap-bg:                       rgba($black, .03) !default;
@@ -779,7 +779,7 @@ $breadcrumb-item-padding:           .5rem !default;
 
 $breadcrumb-margin-bottom:          1rem !default;
 
-$breadcrumb-bg:                     $body-bg !default;
+$breadcrumb-bg:                     $dark !default;
 $breadcrumb-divider-color:          $gray-600 !default;
 $breadcrumb-active-color:           $gray-600 !default;
 $breadcrumb-divider:                "/" !default;
