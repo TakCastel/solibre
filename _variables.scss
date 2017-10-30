@@ -41,6 +41,7 @@ $pink:    #e83e8c !default;
 $red:     #dc3545 !default;
 $orange:  #e66225 !default;
 $yellow:  #ffc107 !default;
+$light-green:   #aeca3a !default;
 $green:   #5e9942 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
@@ -772,8 +773,8 @@ $figure-caption-color:              $gray-600 !default;
 
 // Breadcrumbs
 
-$breadcrumb-padding-y:              .75rem !default;
-$breadcrumb-padding-x:              1rem !default;
+$breadcrumb-padding-y:              0 !default;
+$breadcrumb-padding-x:              0 !default;
 $breadcrumb-item-padding:           .5rem !default;
 
 $breadcrumb-margin-bottom:          1rem !default;
