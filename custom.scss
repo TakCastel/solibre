@@ -60,7 +60,7 @@ html {
         position: absolute;
         top: 0; bottom: 0; left: 0; right: 0;
         opacity: .1;
-        background: url('./images/toulouse.jpg') center center;
+        background: url('./images/cdl2011.jpg') center center;
         background-size: 100% auto;
     }
 }
@@ -130,11 +130,6 @@ h4 {
     }
 }
 
-// Navbar shadow
-.navbar {
-    box-shadow: 0 0 4px rgba(0,0,0, 0.1)
-}
-
 // Members list display
 .member-list {
     display:flex;
@@ -185,20 +180,13 @@ h4 {
         background: $green;
     }
 }
-.card {
-    box-shadow: 0 0 4px rgba(0,0,0, 0.1)
-}
 .card-footer {
     background: $white;
 }
-.card:hover {
-    transition: all 0.2s;
-    img.card-img-top {
-        transition: all 0.2s;
-        filter: grayscale(0);
-    }
-}
 
-img.card-img-top {
-    // filter: grayscale(1);
+// Buttons
+.btn-lg.btn-secondary:hover {
+    color: $secondary;
+    background-color: $white;
+    box-shadow:inset 0px 0px 0px 1px $secondary;
 }
