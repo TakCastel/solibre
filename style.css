@@ -5874,11 +5874,17 @@ footer {
 .background {
   background: #fff; }
 
-.bg-dark {
-  background: linear-gradient(#544f47, #3c3834) !important; }
-
-header {
-  background: linear-gradient(#d0e86c, #b3d03d); }
+.header {
+  position: relative; }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .3;
+    background: url("./images/toulouse.jpg"); }
 
 h1, h2, h3, h4 {
   font-family: 'Ubuntu', sans-serif; }
