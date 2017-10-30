@@ -72,8 +72,14 @@ h4 {
     }
 }
 
-// Navbar custom style
-// Medium devices (tablets, 768px and up)
+// Mobile devices (tablets, 575px and up)
+@media (max-width: 575px) {
+    .logo {
+        display: none;
+    }
+}
+
+// Medium devices (tablets, 992px and up)
 @media (min-width: 992px) {
     nav.navbar {
         padding: 0;
@@ -132,7 +138,12 @@ h4 {
 .social {
     img {
         width: 60px;
-        height: 40px;  
+        height: 40px; 
+        filter: grayscale(1); 
+        transition: filter 0.2s;
+    }
+    img:hover {
+        filter: grayscale(0);
     }
     a:hover {
         text-decoration: none;
@@ -147,4 +158,12 @@ h4 {
 .card:hover {
     background: #d0e86c;
     transition: all 0.2s;
+    img.card-img-top {
+        transition: all 0.2s;
+        filter: grayscale(0);
+    }
+}
+
+img.card-img-top {
+    filter: grayscale(1);
 }

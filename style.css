@@ -5886,6 +5886,10 @@ h4 a {
 h4 a:hover {
   text-decoration: none; }
 
+@media (max-width: 575px) {
+  .logo {
+    display: none; } }
+
 @media (min-width: 992px) {
   nav.navbar {
     padding: 0; }
@@ -5932,7 +5936,12 @@ h4 a:hover {
 
 .social img {
   width: 60px;
-  height: 40px; }
+  height: 40px;
+  filter: grayscale(1);
+  transition: filter 0.2s; }
+
+.social img:hover {
+  filter: grayscale(0); }
 
 .social a:hover {
   text-decoration: none; }
@@ -5944,3 +5953,9 @@ h4 a:hover {
 .card:hover {
   background: #d0e86c;
   transition: all 0.2s; }
+  .card:hover img.card-img-top {
+    transition: all 0.2s;
+    filter: grayscale(0); }
+
+img.card-img-top {
+  filter: grayscale(1); }
