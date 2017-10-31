@@ -184,15 +184,23 @@ h3 a:hover {
     background: $white;
 }
 
-// Buttons
+@media (max-width: 992px) {
+    .card-deck {
+        flex-flow: column;
+    }
+    .card-deck .card {
+        margin-bottom: 15px;
+    }
+}
 
+// Buttons
 .btn:hover {
     cursor: pointer;
 }
 
 .btn-svg {
     fill: $white;
-    margin-right: 24px;    
+    width: 30px;   
 }
 
 .btn-lg.btn-secondary:hover {
