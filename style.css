@@ -5996,10 +5996,3 @@ b, strong {
 
 .custom-control-input:disabled ~ .custom-control-description {
   color: #dee2e6; }
-
-.gj-editor-bootstrap {
-  padding: 0;
-  border: 0; }
-
-.gj-editor-bootstrap div:not(.btn-group):not([data-role="toolbar"]) {
-  padding: 8px 16px; }
