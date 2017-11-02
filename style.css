@@ -5901,10 +5901,18 @@ h1.solibre.heading-1 {
   border-bottom: 1px solid rgba(49, 49, 47, 0.25); }
 
 h1, h2, h3, h4 {
-  font-family: 'Ubuntu', sans-serif; }
-  h1 small, h2 small, h3 small, h4 small {
-    color: #adb5bd;
-    font-size: .6em; }
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400; }
+
+h2, h4 {
+  color: #aeca39; }
+
+h3 {
+  color: #e66225; }
+
+.subtitle {
+  color: rgba(174, 202, 57, 0.75);
+  font-size: 1.2em; }
 
 h4 a {
   color: #000; }
@@ -5912,9 +5920,6 @@ h4 a {
 h4 a:hover {
   color: #000;
   text-decoration: none; }
-
-b, strong {
-  text-shadow: 0 0 #000000; }
 
 @media (max-width: 575px) {
   .logo {
