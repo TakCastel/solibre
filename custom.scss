@@ -74,17 +74,34 @@ html {
     border-radius: 10em;
 }
 
-// Custom elements
-h1, h2, h3 {
-    font-family: 'Ubuntu', sans-serif;
+h1.solibre.heading-1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+    margin: 3.2rem 0;
+    border-bottom: 1px solid rgba($dark, .25);
 }
 
-h3 a {
+// Custom elements
+h1, h2, h3, h4 {
+    font-family: 'Ubuntu', sans-serif;
+    small {
+        color: $gray-500;
+        font-size: .6em;
+    }
+}
+
+h4 a {
     color: $black;
 }
-h3 a:hover {
+
+h4 a:hover {
     color: $black;
     text-decoration: none;
+}
+
+strong {
+    text-shadow: 0 0 #000000;
 }
 
 // Mobile devices (tablets, 575px and up)
@@ -194,13 +211,12 @@ h3 a:hover {
 }
 
 // Buttons
-.btn:hover {
+.btn:not(.disabled):hover {
     cursor: pointer;
 }
 
-.btn-svg {
-    fill: $white;
-    width: 30px;   
+.btn-icon {
+    width: 1rem;
 }
 
 .btn-lg.btn-secondary:hover {
