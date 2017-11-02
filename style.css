@@ -5913,7 +5913,7 @@ h4 a:hover {
   color: #000;
   text-decoration: none; }
 
-strong {
+b, strong {
   text-shadow: 0 0 #000000; }
 
 @media (max-width: 575px) {
@@ -5994,15 +5994,12 @@ strong {
   .card-deck .card {
     margin-bottom: 15px; } }
 
-.btn:not(.disabled):hover {
-  cursor: pointer; }
+.custom-control-input:disabled ~ .custom-control-description {
+  color: #dee2e6; }
 
-.btn-icon {
-  width: 1rem; }
+.gj-editor-bootstrap {
+  padding: 0;
+  border: 0; }
 
-.btn-lg.btn-secondary:hover, .btn-group-lg > .btn-secondary.btn:hover {
-  color: #e66225;
-  background-color: #fff;
-  box-shadow: inset 0px 0px 0px 1px #e66225; }
-  .btn-lg.btn-secondary:hover .btn-svg, .btn-group-lg > .btn-secondary.btn:hover .btn-svg {
-    fill: #e66225; }
+.gj-editor-bootstrap div:not(.btn-group):not([data-role="toolbar"]) {
+  padding: 8px 16px; }

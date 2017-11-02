@@ -100,7 +100,7 @@ h4 a:hover {
     text-decoration: none;
 }
 
-strong {
+b, strong {
     text-shadow: 0 0 #000000;
 }
 
@@ -201,6 +201,8 @@ strong {
     background: $white;
 }
 
+// home cards responsive behavior 3
+
 @media (max-width: 992px) {
     .card-deck {
         flex-flow: column;
@@ -210,20 +212,17 @@ strong {
     }
 }
 
-// Buttons
-.btn:not(.disabled):hover {
-    cursor: pointer;
+// disabled checkbox form color
+.custom-control-input:disabled ~ .custom-control-description {
+    color: $gray-300;
 }
 
-.btn-icon {
-    width: 1rem;
+// WYSIWYG bootstrap 4 editor
+.gj-editor-bootstrap {
+    padding: 0;
+    border: 0;
 }
 
-.btn-lg.btn-secondary:hover {
-    color: $secondary;
-    background-color: $white;
-    box-shadow:inset 0px 0px 0px 1px $secondary;
-    .btn-svg {
-        fill: $secondary;
-    }
+.gj-editor-bootstrap div:not(.btn-group, [data-role="toolbar"]), {
+    padding: 8px 16px;
 }
