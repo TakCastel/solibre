@@ -110,6 +110,25 @@ h4 a:hover {
     text-decoration: none;
 }
 
+blockquote {
+    border-right: 6px solid #aeca3a;
+    padding-right: 15px;
+}
+
+article li {
+    list-style-type: none;
+    margin-bottom: .5rem;
+    &:before {
+        content: "▶ ";
+        position: absolute;
+        left: 25px;      
+    }
+}
+
+// article li {
+//     margin-bottom: .5rem;
+// }
+
 // Mobile devices (tablets, 575px and up)
 @media (max-width: 575px) {
     .logo {
@@ -232,3 +251,13 @@ h4 a:hover {
 // .gj-editor-bootstrap div:not(.btn-group, [data-role="toolbar"]), {
 //     padding: 8px 16px;
 // }
+
+.widget {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgba(49, 49, 47, 0.125);
+    height: 200px;
+    margin-bottom: 2rem;
+    padding: 15px;
+}
