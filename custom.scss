@@ -94,10 +94,11 @@ h2, h4 {
 
 h3 {
     color: $orange;
+    margin-top: 1.25em;
 }
 
 .subtitle {
-    color: rgba($green, .75);
+    color: darken($green, 8%);
     font-size: 1.2em;
 }
 

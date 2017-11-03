@@ -5909,10 +5909,11 @@ h2, h4 {
   color: #a1bb36; }
 
 h3 {
-  color: #e66225; }
+  color: #e66225;
+  margin-top: 1.25em; }
 
 .subtitle {
-  color: rgba(161, 187, 54, 0.75);
+  color: #869b2d;
   font-size: 1.2em; }
 
 h4 a {
