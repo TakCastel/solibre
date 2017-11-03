@@ -5936,8 +5936,7 @@ h2, h4 {
   color: #a1bb36; }
 
 h3 {
-  color: #e66225;
-  margin-top: 1.25em; }
+  color: #e66225; }
 
 h4 a {
   color: #000; }
@@ -5951,18 +5950,21 @@ h4 a:hover {
   font-size: 1.2em;
   margin-bottom: 1.2em; }
 
-img {
+.wysiwyg h3 {
+  margin-top: 1.25em; }
+
+.wysiwyg img {
   max-width: 100%;
   height: auto; }
 
-blockquote {
+.wysiwyg blockquote {
   border-right: 6px solid #aeca3a;
   padding-right: 15px; }
 
-article li {
+.wysiwyg li {
   list-style-type: none;
   margin-bottom: .5rem; }
-  article li:before {
+  .wysiwyg li:before {
     content: "▶ ";
     position: absolute;
     left: 25px; }

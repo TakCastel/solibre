@@ -139,7 +139,6 @@ h2, h4 {
 
 h3 {
     color: $orange;
-    margin-top: 1.25em;
 }
 
 h4 a {
@@ -161,20 +160,24 @@ h4 a:hover {
     margin-bottom: 1.2em;
 }
 
-// Elements
+// WYSIWYG
 // ----------------------------- //
 
-img {
+.wysiwyg h3 {
+    margin-top: 1.25em;
+}
+
+.wysiwyg img {
     max-width: 100%;
     height: auto;
 }
 
-blockquote {
+.wysiwyg blockquote {
     border-right: 6px solid #aeca3a;
     padding-right: 15px;
 }
 
-article li {
+.wysiwyg li {
     list-style-type: none;
     margin-bottom: .5rem;
     &:before {
