@@ -36,9 +36,9 @@
 @import "node_modules/bootstrap/scss/carousel";
 @import "node_modules/bootstrap/scss/utilities";
 
-/* ===============
- CSS CUSTOM STYLES 
-=============== */
+// Layout
+// ----------------------------- //
+
 body {
     font-family: 'Raleway', sans-serif;
 }
@@ -80,59 +80,6 @@ h1.solibre.heading-1 {
     padding-bottom: 1rem;
     margin: 3.2rem 0;
     border-bottom: 1px solid rgba($dark, .25);
-}
-
-// Custom elements
-h1, h2, h3, h4 {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 400;
-}
-
-h2, h4 {
-    color: $green;
-}
-
-h3 {
-    color: $orange;
-    margin-top: 1.25em;
-}
-
-.subtitle {
-    color: darken($green, 8%);
-    font-size: 1.2em;
-}
-
-h4 a {
-    color: $black;
-}
-
-h4 a:hover {
-    color: $black;
-    text-decoration: none;
-}
-
-blockquote {
-    border-right: 6px solid #aeca3a;
-    padding-right: 15px;
-}
-
-article li {
-    list-style-type: none;
-    margin-bottom: .5rem;
-    &:before {
-        content: "▶ ";
-        position: absolute;
-        left: 25px;      
-    }
-}
-
-// article li {
-//     margin-bottom: .5rem;
-// }
-
-img {
-    max-width: 100%;
-    height: auto;
 }
 
 // Mobile devices (tablets, 575px and up)
@@ -177,6 +124,69 @@ img {
     }
 }
 
+
+// Headings
+// ----------------------------- //
+
+h1, h2, h3, h4 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+h2, h4 {
+    color: $green;
+}
+
+h3 {
+    color: $orange;
+    margin-top: 1.25em;
+}
+
+h4 a {
+    color: $black;
+}
+
+h4 a:hover {
+    color: $black;
+    text-decoration: none;
+}
+
+.date {
+    
+}
+
+.subtitle {
+    color: darken($green, 8%);
+    font-size: 1.2em;
+    margin-bottom: 1.2em;
+}
+
+// Elements
+// ----------------------------- //
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+blockquote {
+    border-right: 6px solid #aeca3a;
+    padding-right: 15px;
+}
+
+article li {
+    list-style-type: none;
+    margin-bottom: .5rem;
+    &:before {
+        content: "▶ ";
+        position: absolute;
+        left: 25px;      
+    }
+}
+
+// Members list (home page)
+// ----------------------------- //
+
 // Members list display
 .member-list {
     display:flex;
@@ -190,27 +200,10 @@ img {
     text-align: center;
 }
 
-// Social links
-.social {
-    svg {
-        fill: $white;
-        transition: all 0.2s;        
-    }
-    a:hover {
-        text-decoration: none;
-        #twitter {
-            fill: #1da1f2;
-        }
-        #linkedin {
-            fill: #0077b5;
-        }
-        #facebook {
-            fill: #4367b2;
-        }
-    }
-}
 
-// Card
+// Cards (home page)
+// ----------------------------- //
+
 .card-title {
     font-size: 1.25em;
 
@@ -248,16 +241,6 @@ img {
     color: $gray-300;
 }
 
-// WYSIWYG bootstrap 4 editor
-// .gj-editor-bootstrap {
-//     padding: 0;
-//     border: 0;
-// }
-
-// .gj-editor-bootstrap div:not(.btn-group, [data-role="toolbar"]), {
-//     padding: 8px 16px;
-// }
-
 .widget {
     display: flex;
     flex-direction: column;
@@ -266,3 +249,27 @@ img {
     margin-bottom: 2rem;
     padding: 15px;
 }
+
+
+// Footer
+// ----------------------------- //
+
+.social {
+    svg {
+        fill: $white;
+        transition: all 0.2s;        
+    }
+    a:hover {
+        text-decoration: none;
+        #twitter {
+            fill: #1da1f2;
+        }
+        #linkedin {
+            fill: #0077b5;
+        }
+        #facebook {
+            fill: #4367b2;
+        }
+    }
+}
+

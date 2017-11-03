@@ -5860,9 +5860,6 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important; }
 
-/* ===============
- CSS CUSTOM STYLES 
-=============== */
 body {
   font-family: 'Raleway', sans-serif; }
 
@@ -5901,44 +5898,6 @@ h1.solibre.heading-1 {
   margin: 3.2rem 0;
   border-bottom: 1px solid rgba(49, 49, 47, 0.25); }
 
-h1, h2, h3, h4 {
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 400; }
-
-h2, h4 {
-  color: #a1bb36; }
-
-h3 {
-  color: #e66225;
-  margin-top: 1.25em; }
-
-.subtitle {
-  color: #869b2d;
-  font-size: 1.2em; }
-
-h4 a {
-  color: #000; }
-
-h4 a:hover {
-  color: #000;
-  text-decoration: none; }
-
-blockquote {
-  border-right: 6px solid #aeca3a;
-  padding-right: 15px; }
-
-article li {
-  list-style-type: none;
-  margin-bottom: .5rem; }
-  article li:before {
-    content: "▶ ";
-    position: absolute;
-    left: 25px; }
-
-img {
-  max-width: 100%;
-  height: auto; }
-
 @media (max-width: 575px) {
   .logo {
     display: none; } }
@@ -5969,6 +5928,45 @@ img {
   a.nav-link:hover::before {
     background: rgba(161, 187, 54, 0.5); } }
 
+h1, h2, h3, h4 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400; }
+
+h2, h4 {
+  color: #a1bb36; }
+
+h3 {
+  color: #e66225;
+  margin-top: 1.25em; }
+
+h4 a {
+  color: #000; }
+
+h4 a:hover {
+  color: #000;
+  text-decoration: none; }
+
+.subtitle {
+  color: #869b2d;
+  font-size: 1.2em;
+  margin-bottom: 1.2em; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+blockquote {
+  border-right: 6px solid #aeca3a;
+  padding-right: 15px; }
+
+article li {
+  list-style-type: none;
+  margin-bottom: .5rem; }
+  article li:before {
+    content: "▶ ";
+    position: absolute;
+    left: 25px; }
+
 .member-list {
   display: flex;
   flex-wrap: wrap;
@@ -5979,19 +5977,6 @@ img {
   min-width: 180px;
   margin: 30px 0;
   text-align: center; }
-
-.social svg {
-  fill: #fff;
-  transition: all 0.2s; }
-
-.social a:hover {
-  text-decoration: none; }
-  .social a:hover #twitter {
-    fill: #1da1f2; }
-  .social a:hover #linkedin {
-    fill: #0077b5; }
-  .social a:hover #facebook {
-    fill: #4367b2; }
 
 .card-title {
   font-size: 1.25em; }
@@ -6027,3 +6012,16 @@ img {
   border: 1px solid rgba(49, 49, 47, 0.125);
   margin-bottom: 2rem;
   padding: 15px; }
+
+.social svg {
+  fill: #fff;
+  transition: all 0.2s; }
+
+.social a:hover {
+  text-decoration: none; }
+  .social a:hover #twitter {
+    fill: #1da1f2; }
+  .social a:hover #linkedin {
+    fill: #0077b5; }
+  .social a:hover #facebook {
+    fill: #4367b2; }
