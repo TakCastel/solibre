@@ -129,6 +129,11 @@ article li {
 //     margin-bottom: .5rem;
 // }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 // Mobile devices (tablets, 575px and up)
 @media (max-width: 575px) {
     .logo {
